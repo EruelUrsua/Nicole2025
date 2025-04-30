@@ -1,12 +1,15 @@
 import java.util.Scanner;
+import javax.swing.JOptionPane;
+
  class Main {
 public static void main(String[] args) {
 
     // myMethod();
 //   numCheck();
-numComp();
+// numComp();
+myGui();
 }
-
+//Method for introduction
  static void myMethod()
 {
     Scanner myInput = new Scanner(System.in);
@@ -20,7 +23,7 @@ numComp();
 
     System.out.println("Hi I am " + name + " I am " + age + " years old");
 }
-
+//Method for finding the sum of two numbers
 static void numComp() {
 
     Scanner myInput = new Scanner(System.in);
@@ -35,7 +38,7 @@ static void numComp() {
 
     System.out.println("The sum of " + x + " and " + y + " is " + sum);
 }
-
+//Method for checking if a number is odd or even
 static void numCheck() {
 
     int x = 5;
@@ -51,5 +54,16 @@ static void numCheck() {
 
 } 
 
+//Method for Gui
+static void myGui() {
+
+
+		String name = JOptionPane.showInputDialog("Enter your name");
+		JOptionPane.showMessageDialog(null, "Hello "+name);
+		
+		int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+		JOptionPane.showMessageDialog(null, "You are "+age+" years old");
+
+}
 
 }
