@@ -4,11 +4,51 @@ import javax.swing.JOptionPane;
  class Main {
 public static void main(String[] args) {
 
-    // myMethod();
-//   numCheck();
-// numComp();
-myGui();
+simpleGui();
+
 }
+
+static void simpleGui() {
+
+JOptionPane.showMessageDialog(null, "Hi Nicole");
+
+}
+
+static  void myTriangle (){
+
+for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < i; j++) {
+        System.out.print("*");
+    }
+ System.out.println("");
+}
+
+}
+
+static void myCalc(int a, int b, String o)
+{
+   int ans = 0;
+
+   switch (o) {
+       case "+":
+           ans = a+b;
+           break;
+       case "-":
+           ans = a-b;
+           break;
+       case "/":
+           ans = a/b;
+           break;
+       case "*":
+           ans = a*b;
+           break;
+   }
+
+System.out.println("The answer is "+ans);
+
+}
+
+
 //Method for introduction
  static void myMethod()
 {
@@ -57,12 +97,12 @@ static void numCheck() {
 //Method for Gui
 static void myGui() {
 
-
-		String name = JOptionPane.showInputDialog("Enter your name");
-		JOptionPane.showMessageDialog(null, "Hello "+name);
+ JOptionPane.showMessageDialog(null, "Hello Nicole");
+		// String name = JOptionPane.showInputDialog("Enter your name");
+		// JOptionPane.showMessageDialog(null, "Hello "+name);
 		
-		int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
-		JOptionPane.showMessageDialog(null, "You are "+age+" years old");
+		// int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+		// JOptionPane.showMessageDialog(null, "You are "+age+" years old");
 
 }
 
